@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Entry point
+ * main - Prints "Size of different variables with different data types"
  * Return: Always 0 (success)
  */
 int main(void)

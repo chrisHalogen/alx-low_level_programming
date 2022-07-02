@@ -1,9 +1,7 @@
 #include <stdio.h>
-
-/*
- * main - Entry point
- * Return: Always 0 (sucess)
- * Description: This function is just a regular c main function
+/**
+ * main - Write 'Programming is like building a multilingual puzzle'
+ * Return: Always 0 (success)
  */
 int main(void)
 {
