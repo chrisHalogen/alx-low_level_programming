@@ -13,11 +13,12 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	int count, result = 0;
+	int count, result = 1;
 
-	for (count = 0; count < argc; count++)
-		count *= atoi(argv[count]);
-
+	for (count = 1; count < argc; count++)
+	{
+		result *= atoi(argv[count]);
+	}
 	printf("%d\n", result);
 
 	return (0);
