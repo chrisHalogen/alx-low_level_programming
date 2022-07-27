@@ -7,19 +7,18 @@
  */
 int main(int argc, char *argv[])
 {
+	int i, val = 1;
+
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (1);
 	}
-
-	int count, result = 1;
-
-	for (count = 1; count < argc; count++)
+	for (i = 1; i < argc; i++)
 	{
-		result *= atoi(argv[count]);
+		val *= atoi(argv[i]);
 	}
-	printf("%d\n", result);
+	printf("%d\n", val);
 
 	return (0);
 }
