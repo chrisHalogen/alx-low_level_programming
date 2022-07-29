@@ -23,11 +23,11 @@ char *_strdup(char *str)
 
 	while (y < x)
 	{
-		s[y] = str[y];
+		space[y] = str[y];
 		y++;
 	}
 
-	s[y] = '\0';
+	space[y] = '\0';
 
 	return (space);
 }

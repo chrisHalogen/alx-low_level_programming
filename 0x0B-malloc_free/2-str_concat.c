@@ -35,16 +35,16 @@ char *str_concat(char *s1, char *s2)
 	while (k < final_length)
 	{
 		if (k < length_1)
-			s[k] = s1[k];
+			space[k] = s1[k];
 
 		if (k >= length_1)
 		{
-			s[k]  = s2[length_2];
+			space[k]  = s2[length_2];
 			length_2++;
 		}
 		k++;
 	}
-	s[k] = '\0';
+	space[k] = '\0';
 
 	return (space);
 }
