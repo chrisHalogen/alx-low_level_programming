@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 /**
- * get_op_func - select the correct operation
- * @s: input string for the operator
- * Return: function pointer for operator
+ * get_op_func - select the correct operation function asked by user
+ * @s: operator argument
+ * Return: function pointer corresponding to operator given
  */
 int (*get_op_func(char *s))(int, int)
 {
@@ -18,14 +18,14 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 
-	int count;
+	int i;
 
-	count = 0;
-	while (count < 5)
+	i = 0;
+	while (i < 5)
 	{
-		if (ops[count].op[0] == s[0])
-			return (ops[count].f);
-		count++;
+		if (ops[i].op[0] == s[0])
+			return (ops[i].f);
+		i++;
 	}
 
 	return (NULL);

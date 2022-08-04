@@ -3,42 +3,30 @@
 #include <stdio.h>
 
 /**
- * main - main function
- * @argc: number of argumants
- * @argv: string of arguments
- * Return: 0
+ * get_op_func - select the correct operation function asked by user
+ * @s: operator argument
+ * Return: function pointer corresponding to operator given
  */
-int main(int argc, char *argv[])
+int (*get_op_func(char *s))(int, int)
 {
-	int x, y, z;
-	int (*o)(int, int);
+	op_t ops[] = {
+		{"+", op_add},
+		{"-", op_sub},
+		{"*", op_mul},
+		{"/", op_div},
+		{"%", op_mod},
+		{NULL, NULL}
+	};
 
-	if (argc != 4)
+	int i;
+
+	i = 0;
+	while (i < 5)
 	{
-		printf("Error\n");
-		exit(98);
+		if (ops[i].op[0] == s[0])
+			return (ops[i].f);
+		i++;
 	}
 
-	if (argv[2][1] != '\0')
-	{
-		printf("Error\n");
-		exit(99);
-	}
-
-	o = get_op_func(argv[2]);
-
-	if (o == NULL)
-	{
-		printf("Error\n");
-		exit(99);
-	}
-
-	x = atoi(argv[1]);
-	y = atoi(argv[3]);
-
-	z = o(a, b);
-
-	printf("%d\n", z);
-
-	return (0);
+	return (NULL);
 }

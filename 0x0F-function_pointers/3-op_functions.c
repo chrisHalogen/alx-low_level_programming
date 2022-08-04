@@ -2,10 +2,10 @@
 #include <stdlib.h>
 
 /**
- * op_add - addition function
- * @a: first operand
- * @b: second operand
- * Return: sum of a and b
+ * op_add - addition operator
+ * @a: first int
+ * @b: second int
+ * Return: sum of 2 numbers
  */
 int op_add(int a, int b)
 {
@@ -13,10 +13,10 @@ int op_add(int a, int b)
 }
 
 /**
- * op_sub - subtraction function
- * @a: first operand
- * @b: second operand
- * Return: difference between a and b
+ * op_sub - subtraction operator
+ * @a: first in
+ * @b: second int
+ * Return: difference of 2 numbers
  */
 int op_sub(int a, int b)
 {
@@ -24,10 +24,10 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_mul - product function
- * @a: first operand
- * @b: second operand
- * Return: product a and b
+ * op_mul - product of 2 numbers
+ * @a: first int
+ * @b: second int
+ * Return: product of the numbers
  */
 int op_mul(int a, int b)
 {
@@ -35,10 +35,10 @@ int op_mul(int a, int b)
 }
 
 /**
- * op_div - division function
- * @a: first operand
- * @b: second operand
- * Return: a over b
+ * op_div - division of 2 numbers
+ * @a: first int
+ * @b: second int
+ * Return: result of the division of the numbers
  */
 int op_div(int a, int b)
 {
@@ -52,10 +52,10 @@ int op_div(int a, int b)
 }
 
 /**
- * op_mod - modulus function
- * @a: first operand
- * @b: second operand
- * Return: a mod b
+ * op_mod - get remainder of the division of 2 numbers
+ * @a: first int
+ * @b: second int
+ * Return: remainder of division of the numbers
  */
 int op_mod(int a, int b)
 {
