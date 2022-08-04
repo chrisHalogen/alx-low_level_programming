@@ -1,6 +1,8 @@
 #ifndef VARIADIC_FUNCTIONS_HEADER_FILE
 #define VARIADIC_FUNCTIONS_HEADER_FILE
 
+#include <stdarg.h>
+
 int putchar(char c);
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
